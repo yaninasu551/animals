@@ -1,0 +1,24 @@
+header {
+    height: 60px;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+nav {
+    height: 100%;
+    max-width: 1400px;
+    padding: 0 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: black;
+}
+
+nav .links {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
