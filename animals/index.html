@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Животные</title>
+    <link rel="stylesheet" href="assets/reboot.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav> 
+            <span class="title">Сайт о животных</span>
+
+            <input type="checkbox" id="burger-toggle" checked>
+            <label for="burger-toggle" class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <script>
+              const checkbox = document.querySelector("input[type='checkbox']#burger-toggle");
+              checkbox.addEventListener("change", (event) => {
+                console.log('asd')
+                document.querySelector("header").classList.toggle("active");
+              })
+            </script>
+            <div class="links">
+                <a href="index.html">Главная</a>
+                <a href="world.html">Животный мир</a>
+                <a href="ecology.html">Экология</a>
+
+
+
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Поиск" class="search">
+                    <ul>
+                        <!--  -->
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+    <section class="slider">
+        <div class="slide">
+            <img
+            src="https://source.unsplash.com/random?landscape,forest"
+            alt=""
+            />
+        </div>
+    
+        <div class="slide">
+            <img src="https://source.unsplash.com/random?landscape,cars" alt="" />
+        </div>
+    
+        <div class="slide">
+            <img src="https://source.unsplash.com/random?landscape,night" alt="" />
+        </div>
+
+        <div class="slide">
+            <img src="https://source.unsplash.com/random?landscape,city" alt="" />
+        </div>
+
+        <button class="btn btn-next">></button>
+        <button class="btn btn-prev"><</button>
+    </section>
+    <section class="animals">
+        <!--  -->
+    </section>
+    <footer>Автор: &copy; Суржикова Я.В.</footer>
+</body>
+<script src="script.js"></script>
+</html>
