@@ -1,10 +1,12 @@
 html {
+    position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 header {
     position: fixed;
+    top: 0;
     height: 60px;
     max-height: 60px;
     width: 100vw;
@@ -17,7 +19,6 @@ header.active {
 }
 
 nav {
-    overflow: hidden;
     position: relative;
     top: 0;
     height: 100%;
@@ -132,6 +133,7 @@ nav ul li:hover{
     
     nav {
         flex-direction: column;
+        overflow: hidden;
     }
 
     nav span.title{
@@ -159,6 +161,7 @@ body {
     min-height:100dvh;
     position: relative;
     padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .catalogue {
